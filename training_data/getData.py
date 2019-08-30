@@ -1,5 +1,7 @@
 import requests
 import json
+from pykrakenapi import KrakenAPI
+
 
 
 #note that not all api will use this base
@@ -27,3 +29,6 @@ for trade in trades:
         print("set maxTrade to " + str(trade[0]))
 print("Lowest Trade-----" + str(minTrade))
 print("Highest Trade----" + str(maxTrade))
+
+
+help(KrakenAPI)
