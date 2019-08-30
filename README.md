@@ -1,6 +1,6 @@
 # cryptoBot
 
-## ToDo
+## TODO
 
  - Gather data required to train the bot
  - Process said data into useable format
@@ -42,7 +42,7 @@
  - The bot faux buy/sell abilities are suplemented with live abilities
  - If the bot does not have a an average of at least a .5% profit daily (bullish) and less than 0.5% loss (bearish), it is taken back for more training
 
-##### Future plans
+#### Future plans
  - Increase capital to increase profits
     - Once the bot is well proven in both markets, we should begin to reach out to garner more capital
     - The investor will take most of the profits, while we would take a cut of them
