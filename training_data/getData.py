@@ -1,9 +1,19 @@
 import requests
 import json
-from pykrakenapi import KrakenAPI
+import krakenex
+from pykrakenapi import KrakenAPI as krakenapi
+import pandas as pd
+import datetime as dt
 
+api = krakenex.API()
+k = krakenapi(api)
 
+df = k.get_recent_trades('XETHZUSD')[0]
+df = df.reset_index()
 
+print(df['volume'].sort())
+
+'''
 #note that not all api will use this base
 krakenBase = 'https://api.kraken.com'
 
@@ -29,6 +39,4 @@ for trade in trades:
         print("set maxTrade to " + str(trade[0]))
 print("Lowest Trade-----" + str(minTrade))
 print("Highest Trade----" + str(maxTrade))
-
-
-help(KrakenAPI)
+'''
